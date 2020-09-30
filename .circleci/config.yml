@@ -1,8 +1,9 @@
 version: 2.1
+
 jobs:
   build:
     macos:
-      - xcode: 11.3.0
+      - xcode: 12.0.0
     steps:
       - checkout
       - run:
