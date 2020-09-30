@@ -1,11 +1,11 @@
 language: objective-c
-matrix:
+os: 
+  - osx
+
+jobs:
   include:
     - osx_image: xcode12
-    
+
 script:
   - brew install danger/tap/danger-swift
   - danger-swift ci
-branches:
-  only:
-  - danger
