@@ -1,0 +1,11 @@
+language: objective-c
+os: 
+  - osx
+
+jobs:
+  include:
+    - osx_image: xcode12
+
+script: 
+  - brew install danger/tap/danger-swift
+  - swift run danger-swift ci
