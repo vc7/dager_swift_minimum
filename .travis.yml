@@ -7,5 +7,4 @@ jobs:
     - osx_image: xcode12
 
 script:
-  - brew install danger/tap/danger-swift
-  - danger-swift ci
+  - swift run danger-swift ci
